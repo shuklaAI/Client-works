@@ -109,9 +109,9 @@ export default function Footer() {
         </p>
 
         <div className="flex space-x-8">
-          <a href="#" className="text-white/20 hover:text-white transition-colors text-[10px] uppercase tracking-widest">
+          <Link to="/privacy-policy" className="text-white/20 hover:text-white transition-colors text-[10px] uppercase tracking-widest">
             Privacy Policy
-          </a>
+          </Link>
           <a href="#" className="text-white/20 hover:text-white transition-colors text-[10px] uppercase tracking-widest">
             Terms of Service
           </a>

@@ -8,6 +8,7 @@ import ExperiencePage from './pages/ExperiencePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import TrekDetails from './pages/TrekDetails';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/trek/:id" element={<TrekDetails />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />
