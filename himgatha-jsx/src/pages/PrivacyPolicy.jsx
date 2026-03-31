@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-serif text-white mb-4">Introduction</h2>
             <p>
-              Himgatha TTrails ("we," "our," or "us") operates the Himgatha Trails website and services. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+              Himgatha Trails ("we," "our," or "us") operates the Himgatha Trails website and services. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
             </p>
           </section>
 
