@@ -53,7 +53,7 @@ export default function Footer() {
             <li className="flex items-start space-x-4">
               <MapPin size={18} className="text-gold shrink-0 mt-1" />
               <span className="text-white/40 text-sm leading-relaxed">
-                Gali No 8, A Block, Hans Residential Colony, Kamalpur Buradi, Delhi – 110084
+                Gali No 8, A Block, Hans Residential Colony, Kamalpur Burari, Delhi – 110084
               </span>
             </li>
 
