@@ -1,0 +1,86 @@
+.page {
+  min-height: 80vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: var(--sp-8) var(--sp-4);
+}
+.container {
+  max-width: 520px; width: 100%;
+  text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: var(--sp-6);
+}
+.iconWrap {
+  position: relative;
+  width: 120px; height: 120px;
+  display: flex; align-items: center; justify-content: center;
+}
+.iconRing {
+  position: absolute; inset: 0;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  animation: pulse 2s ease infinite;
+}
+@keyframes pulse {
+  0%,100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.08); opacity: 0.6; }
+}
+.icon { color: var(--gold); animation: popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275); }
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+.title { font-size: 2rem; color: var(--white); }
+.subtitle { color: var(--text-secondary); line-height: 1.6; }
+
+.orderCard {
+  width: 100%;
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-xl);
+  padding: var(--sp-6);
+  display: flex; flex-direction: column; gap: var(--sp-3);
+}
+.orderRow {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.875rem; color: var(--text-secondary);
+}
+.orderId { color: var(--gold); font-family: monospace; font-size: 1rem; }
+.payStatus { color: var(--success); font-weight: 600; }
+
+.steps {
+  display: flex; align-items: center; justify-content: center; gap: 0;
+  width: 100%;
+}
+.step {
+  display: flex; flex-direction: column; align-items: center; gap: var(--sp-2);
+  flex: 1; position: relative;
+}
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute; top: 14px; left: 60%;
+  width: 80%; height: 2px;
+  background: var(--navy-border);
+}
+.stepActive:not(:last-child)::after { background: var(--gold); }
+.stepDot {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; font-weight: 700;
+  background: var(--navy-3); border: 2px solid var(--navy-border);
+  color: var(--text-muted); z-index: 1;
+}
+.stepActive .stepDot {
+  background: var(--gold); border-color: var(--gold);
+  color: var(--navy);
+}
+.step span { font-size: 0.72rem; color: var(--text-muted); text-align: center; }
+.stepActive span { color: var(--gold); font-weight: 600; }
+
+.emailNote {
+  font-size: 0.82rem; color: var(--text-muted);
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-3) var(--sp-5);
+}
+.actions { display: flex; gap: var(--sp-4); flex-wrap: wrap; justify-content: center; }

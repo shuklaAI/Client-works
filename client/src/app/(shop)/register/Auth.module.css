@@ -1,0 +1,103 @@
+.page {
+  min-height: 90vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: var(--sp-8) var(--sp-4);
+  background: radial-gradient(ellipse at top, rgba(201,168,76,0.06) 0%, transparent 60%);
+}
+.card {
+  width: 100%; max-width: 440px;
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-2xl);
+  padding: var(--sp-10) var(--sp-8);
+  box-shadow: var(--shadow-lg);
+}
+.logo {
+  display: flex; align-items: center; justify-content: center; gap: var(--sp-2);
+  font-family: var(--font-display); font-size: 1.6rem;
+  margin-bottom: var(--sp-6);
+  text-decoration: none;
+}
+.logoText { color: var(--white); }
+.logoGold { color: var(--gold); }
+.title {
+  font-size: 1.7rem; text-align: center;
+  margin-bottom: var(--sp-2);
+}
+.subtitle { color: var(--text-muted); font-size: 0.875rem; text-align: center; margin-bottom: var(--sp-6); }
+
+.errorBox {
+  display: flex; align-items: center; gap: var(--sp-2);
+  background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3);
+  border-radius: var(--r-md); padding: var(--sp-3) var(--sp-4);
+  font-size: 0.83rem; color: var(--error);
+  margin-bottom: var(--sp-5);
+}
+
+.form { display: flex; flex-direction: column; gap: var(--sp-4); }
+.field { display: flex; flex-direction: column; gap: var(--sp-2); }
+.field label {
+  font-size: 0.8rem; font-weight: 600;
+  color: var(--text-secondary);
+}
+.optional { color: var(--text-muted); font-weight: 400; }
+.labelRow { display: flex; justify-content: space-between; align-items: center; }
+.forgot { font-size: 0.78rem; color: var(--gold); }
+.forgot:hover { text-decoration: underline; }
+
+.passWrap { position: relative; }
+.passWrap .input { padding-right: 44px; }
+.eyeBtn {
+  position: absolute; right: 12px; top: 50%;
+  transform: translateY(-50%);
+  background: none; border: none; cursor: pointer;
+  color: var(--text-muted); transition: color var(--t-fast);
+}
+.eyeBtn:hover { color: var(--gold); }
+
+.strengthBar { display: flex; align-items: center; gap: var(--sp-3); margin-top: var(--sp-1); }
+.strengthBars { display: flex; gap: 4px; flex: 1; }
+.strengthSegment { height: 3px; flex: 1; border-radius: var(--r-full); transition: background var(--t-fast); }
+
+.terms {
+  font-size: 0.75rem; color: var(--text-muted); line-height: 1.5;
+}
+.terms a { color: var(--gold); text-decoration: underline; }
+
+.submitBtn {
+  width: 100%; justify-content: center;
+  padding: 0.9rem; font-size: 0.95rem;
+  margin-top: var(--sp-2);
+}
+
+.divider {
+  display: flex; align-items: center; gap: var(--sp-4);
+  margin: var(--sp-5) 0;
+  color: var(--text-muted); font-size: 0.8rem;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; height: 1px;
+  background: var(--navy-border);
+}
+
+.demoBox {
+  background: var(--navy-3);
+  border: 1px dashed var(--navy-border);
+  border-radius: var(--r-lg); padding: var(--sp-4);
+  text-align: center;
+}
+.demoTitle { font-size: 0.78rem; color: var(--text-muted); margin-bottom: var(--sp-3); }
+.demoBtn {
+  background: none; border: 1px solid var(--gold);
+  color: var(--gold); font-size: 0.8rem; font-weight: 600;
+  padding: var(--sp-2) var(--sp-4); border-radius: var(--r-md);
+  cursor: pointer; transition: all var(--t-fast);
+}
+.demoBtn:hover { background: var(--gold-muted); }
+
+.switch {
+  text-align: center; font-size: 0.85rem;
+  color: var(--text-muted); margin-top: var(--sp-5);
+}
+.switch a { color: var(--gold); font-weight: 600; }
+.switch a:hover { text-decoration: underline; }
